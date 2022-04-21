@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: '標楷體';
+}
+
+.main {
+    display: flex;
+    width: 1024px;
+    height: 768px;
+    /* padding: 0px 12px; */
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: brown; */
+    border: 1px solid lightgray;
+}
+
+/* body>*:not(aside,section),
+aside>*,
+section>*{
+    border: 1px solid lightgray;
+} */
+
+.top {
+    width: 1000px;
+    height: 65px;
+    /* border: 1px solid lightgrey; */
+    background-color: aqua;
+}
+
+.aside {
+    /* border: 1px solid lightgray; */
+    width: 215px;
+    height: 683px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu {
+    border: 1px solid lightgrey;
+    /* background-color: yellow; */
+    height: 658px;
+}
+table{
+    width: 100%;
+}
+td.title{
+    font-family: '標楷體';
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF00FF;
+    text-align: center;
+    text-decoration-line: underline;
+    padding: 10px;
+}
+td.name{
+    font-family: '標楷體';
+    font-size: 16px;
+    color: #000000;
+    background-image: url(/images/menu1.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    padding: 10px;
+}
+td.name:hover{
+    background-image: url(/images/menu2.png);
+}
+.update {
+    /* border: 1px solid lightgrey; */
+    background-color: orange;
+    height: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+}
+.section{
+    width: 785px;
+    height: 683px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.marquee {
+    /* border: 1px solid lightgrey; */
+    background-color: green;
+    height: 29px;
+    width: 770px;
+    font-family: '標楷體';
+
+    font-size: 24px;
+    color: #0000FF;
+
+}
+
+.content {
+    /* border: 1px solid lightgrey; */
+    background-color: lightgreen;
+    height: 654px;
+
+}
+
+.footer {
+    /* border: 1px solid lightgrey; */
+    background-color: pink;
+    width: 1000px;
+    height: 20px;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+}
