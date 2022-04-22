@@ -25,8 +25,8 @@ section>*{
 .top {
     width: 1000px;
     height: 65px;
-    /* border: 1px solid lightgrey; */
-    background-color: aqua;
+    border: 1px solid lightgrey;
+    /* background-color: aqua; */
 }
 
 .aside {
@@ -84,8 +84,8 @@ td.name:hover{
 
 }
 .marquee {
-    /* border: 1px solid lightgrey; */
-    background-color: green;
+    border: 1px solid lightgrey;
+    /* background-color: green; */
     height: 29px;
     width: 770px;
     font-family: '標楷體';
@@ -96,10 +96,15 @@ td.name:hover{
 }
 
 .content {
-    /* border: 1px solid lightgrey; */
-    background-color: lightgreen;
+    border: 1px solid lightgrey;
+    background-image: url(/images/0101.jpg);
+    /* background-color: lightgreen; */
     height: 654px;
-
+    font-size: 24px;
+    font-family: '標楷體';
+    font-weight: bolder;
+    font-style: italic;
+    color: #0000FF;
 }
 
 .footer {
