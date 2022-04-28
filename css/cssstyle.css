@@ -9,55 +9,56 @@
     border: 1px solid lightgray;
 }
 .main{
-    display: flex;
-    flex-wrap: wrap;
     width: 1024px;
     height: 768px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 10px auto;
 }
 .top{
-    flex-basis: 1000px;
+    width: 1000px;
     height: 65px;
 }
 .left{
     display: flex;
     flex-direction: column;
     flex-basis: 215px;
-    height: 683px;
+    height: 683px;    
 }
 .menu{
     flex-basis: 658px;
     width: 215px;
-}
-div~a{
-    display: block;
-    margin: 10px auto;
+    font-weight: 500;
     text-align: center;
-    text-decoration: none;
+}
+.menu>a{
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    background-image: url(/images/menu1.png);
+    background-repeat: no-repeat;
     width: 200px;
     height: 35px;
     line-height: 35px;
-    color: #000000;
-    font-size: 16px;
-    background-image: url(/images/menu1.png);
+    margin: 10px;
+    text-decoration: none;
 }
-div~a:hover{
+.menu>a:hover{
     background-image: url(/images/menu2.png);
 }
 .update{
     flex-basis: 25px;
     width: 215px;
-    color: #000000;
     font-size: 16px;
+    color: #000000;
     text-align: center;
-
 }
 .right{
     display: flex;
     flex-direction: column;
-    flex-basis: 785px;
-    height: calc(768px - 65px - 20px);
+    flex-basis: calc(1000px - 215);
+    height: 683px;
 }
 .marquee{
     flex-basis: 29px;
@@ -68,9 +69,9 @@ div~a:hover{
     width: 785px;
 }
 .footer{
-    flex-basis: 1000px;
+    width: 1000px;
     height: 20px;
-    color: #000000;
     font-size: 16px;
     text-align: center;
+    color: #000000;
 }
