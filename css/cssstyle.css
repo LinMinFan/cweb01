@@ -1,88 +1,76 @@
-* {
+*{
     box-sizing: border-box;
-    /* border: 1px solid gray; */
+    font-family: "標楷體";
+    font-size: 24px;
 }
-
-.main {
-    width: 1024px;
-    height: 768px;
+.main>*:not(.left,.right),
+.left>*,
+.right>*{
+    border: 1px solid lightgray;
+}
+.main{
     display: flex;
     flex-wrap: wrap;
+    width: 1024px;
+    height: 768px;
     justify-content: center;
-    margin: 15px auto;
-    border: 1px solid gray;
+    margin: 10px auto;
 }
-
-.top {
-    border: 1px solid gray;
-    width: 1000px;
+.top{
+    flex-basis: 1000px;
     height: 65px;
 }
-
-.aside {
-    width: 215px;
-    height: 683px;
+.left{
     display: flex;
     flex-direction: column;
-}
-
-.section {
-    width: 785px;
+    flex-basis: 215px;
     height: 683px;
-    display: flex;
-    flex-direction: column;
 }
-
-.marquee {
-    border: 1px solid gray;
-    width: 785px;
-    height: 29px;
-}
-
-.menu {
-    border: 1px solid gray;
+.menu{
+    flex-basis: 658px;
     width: 215px;
-    height: 658px;
-    font-family: "標楷體";
-    font-weight: 500;
 }
-
-tr {
+div~a{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    color: #000000;
+    font-size: 16px;
     background-image: url(/images/menu1.png);
-    background-repeat: no-repeat;
-    height: 36px;
 }
-
-tr:hover {
+div~a:hover{
     background-image: url(/images/menu2.png);
 }
-
-.update {
-    border: 1px solid gray;
-    border-bottom: none;
+.update{
+    flex-basis: 25px;
     width: 215px;
-    height: 25px;
-    font-family: "標楷體";
-    font-size: 16px;
     color: #000000;
+    font-size: 16px;
     text-align: center;
-}
 
-.content {
-    border: 1px solid gray;
-    border-bottom: none;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 785px;
+    height: calc(768px - 65px - 20px);
+}
+.marquee{
+    flex-basis: 29px;
     width: 785px;
-    height: 654px;
-    text-align: center;
 }
-
-.footer {
-    border: 1px solid gray;
-    border-bottom: none;
-    width: 1000px;
-    height: 20;
-    font-family: "標楷體";
+.content{
+    flex-basis: 654px;
+    width: 785px;
+}
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
     color: #000000;
-    text-align: center;
     font-size: 16px;
+    text-align: center;
 }
