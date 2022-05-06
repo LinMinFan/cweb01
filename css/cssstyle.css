@@ -46,12 +46,12 @@
     line-height: 35px;
     font-size: 16px;
     text-decoration: none;
-    background-image: url(/images/menu1.png);
+    background-image: url(../images/menu1.png);
     margin: 5px auto;
     color: #000000;
 }
 .menu>a:hover{
-    background-image: url(/images/menu2.png);
+    background-image: url(../images/menu2.png);
 }
 .update{
     flex-basis: 25px;
