@@ -3,46 +3,52 @@
     font-family: "標楷體";
     font-size: 24px;
 }
-.main>*:not(.left,.right),
-.left>*,
-.right>*{
-    border: 1px solid lightgray;
-}
 .main{
     width: 1024px;
     height: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px auto;
+    margin: 15px auto;
+}
+.main>*:not(.left,.right),
+.left>*,
+.right>*{
+    border: 1px solid lightgray;
 }
 .top{
-    width: 1000px;
+    flex-basis: 1000px;
     height: 65px;
+    display: flex;
+    justify-content: center;
 }
 .left{
+    flex-basis: 215px;
+    height: 683px;
     display: flex;
     flex-direction: column;
-    flex-basis: 215px;
-    height: 683px;    
+    text-align: center;
 }
 .menu{
     flex-basis: 658px;
     width: 215px;
     font-weight: 500;
-    text-align: center;
+}
+.title{
+    text-decoration: underline;
+    color: #FF00FF;
+    margin: 10px auto;
 }
 .menu>a{
     display: block;
-    font-size: 16px;
-    color: #000000;
-    background-image: url(/images/menu1.png);
-    background-repeat: no-repeat;
     width: 200px;
     height: 35px;
     line-height: 35px;
-    margin: 10px;
+    font-size: 16px;
     text-decoration: none;
+    background-image: url(/images/menu1.png);
+    margin: 5px auto;
+    color: #000000;
 }
 .menu>a:hover{
     background-image: url(/images/menu2.png);
@@ -52,26 +58,33 @@
     width: 215px;
     font-size: 16px;
     color: #000000;
-    text-align: center;
 }
 .right{
+    flex-basis: 785px;
+    height: 683px;
     display: flex;
     flex-direction: column;
-    flex-basis: calc(1000px - 215);
-    height: 683px;
 }
 .marquee{
     flex-basis: 29px;
     width: 785px;
+    display: flex;
+    justify-content: center;
+    color: #0000FF;
 }
 .content{
     flex-basis: 654px;
     width: 785px;
 }
+iframe{
+    width: 770px;
+    height: 100%;
+    margin-left: 10px;
+}
 .footer{
-    width: 1000px;
+    flex-basis: 1000px;
     height: 20px;
     font-size: 16px;
-    text-align: center;
     color: #000000;
+    text-align: center;
 }
